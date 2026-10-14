@@ -12,15 +12,18 @@ window.PLANS_CONFIG = {
   booking: 'https://calendar.app.google/REPLACE_ME_BOOKING',
   plans: [
     { id:'managed',   name:'Managed',          monthly:5000,  quarterly:4500,
-      features:['A vetted editor, directed and checked by Michael','Cutdowns, versions and resizes','Promo variations and standard edits'],
+      meta:'1 editor, 1 workstream',
+      features:['Social edits, talking heads and interviews','Cutdowns, versions and resizes','Promo variations and standard edits','An editor managed and trained by Michael'],
       checkout:{ monthly:'https://buy.stripe.com/REPLACE_ME_MANAGED_MONTHLY',
                  quarterly:'https://buy.stripe.com/REPLACE_ME_MANAGED_QUARTERLY' } },
     { id:'signature', name:'Signature',        monthly:7500,  quarterly:6750, selected:true,
-      features:['Michael edits, start to finish','Trailers, sizzles and hero promos','Product animation and motion'],
+      meta:'Michael, 1 workstream',
+      features:['Work directly with Michael to craft your pieces','Trailers, sizzles and hero promos','Product animation and motion'],
       checkout:{ monthly:'https://buy.stripe.com/REPLACE_ME_SIGNATURE_MONTHLY',
                  quarterly:'https://buy.stripe.com/REPLACE_ME_SIGNATURE_QUARTERLY' } },
     { id:'partner',   name:'Creative Partner', monthly:18500, quarterly:16650,
-      features:['Signature and Managed lanes together','A producer who writes scripts and pitches concepts','A mixer and a colorist to finish your work'],
+      meta:'2 editors, 2 workstreams, plus a full team',
+      features:['Michael and a second editor, working side by side','A writer and producer for scripts and concept pitches','A colorist to grade your hero pieces','A sound designer and mixer to finish them'],
       checkout:{ monthly:'https://buy.stripe.com/REPLACE_ME_PARTNER_MONTHLY',
                  quarterly:'https://buy.stripe.com/REPLACE_ME_PARTNER_QUARTERLY' } }
   ]

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plans — Good Mood</title>
 <meta name="robots" content="noindex">
-<meta name="description" content="Subscribe to a dedicated editor and animator from Good Mood. One request at a time, unlimited revisions, month to month or quarterly.">
+<meta name="description" content="Subscribe to dedicated editing and motion design from Good Mood. One request at a time, unlimited revisions, month to month or quarterly.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap">
@@ -64,6 +64,7 @@
   .price b{font-size:clamp(36px,4vw,46px);font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
   .price span{font-size:15px;opacity:.7}
   .bill{min-height:1.5em;margin-top:-10px;font-size:14px;font-weight:600}
+  .meta{margin-top:-14px;font-size:14px;font-weight:700;letter-spacing:.01em}
   .feat{list-style:none;border-top:1px solid currentColor;border-top-color:color-mix(in srgb,currentColor 25%,transparent);padding-top:20px;display:flex;flex-direction:column;gap:12px;font-size:15.5px}
   .feat li{padding-left:18px;position:relative}
   .feat li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;background:currentColor}
@@ -71,6 +72,7 @@
   .cta .sel{font-weight:600;margin-right:auto;min-width:0}
   .terms{margin:34px 0 0;padding:20px 0 70px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 26px;font-size:14px;color:var(--text-dim)}
   .terms span::before{content:"+ ";color:var(--accent);font-weight:700}
+  @media (max-width:480px){.bar nav{gap:14px}.bar nav a{font-size:12px}.seg span{padding:8px 13px;font-size:13px;white-space:nowrap}.seg em{margin-left:4px}.cta .btn{flex:1 1 100%}}
   @media (max-width:860px){.plans{grid-template-columns:1fr}.bar nav{gap:18px}.intro{padding-top:48px}}
 </style>
 </head>
@@ -96,8 +98,8 @@
   </div>
 
   <header class="intro">
-    <h1>Pick a lane.</h1>
-    <p>A dedicated editor and animator on a flat monthly subscription. Pause or cancel any time.</p>
+    <h1>Pick a plan.</h1>
+    <p>Dedicated editing and motion design on a flat monthly subscription. Pause or cancel any time.</p>
   </header>
 
   <div class="cycle" role="radiogroup" aria-label="Billing">
@@ -115,7 +117,7 @@
     <a class="btn primary" id="start" href="#">Start</a>
   </div>
 
-  <div class="terms"><span>One request at a time per lane</span><span>Unlimited revisions</span><span id="term">Month to month</span><span>Pay by bank transfer or card</span></div>
+  <div class="terms"><span>One request at a time per workstream, so deliveries never pile up</span><span>Unlimited revisions</span><span id="term">Month to month</span><span>Pay by bank transfer or card</span></div>
 </div>
 
 <script src="plans-config.js"></script>
@@ -126,7 +128,7 @@
   box.innerHTML=C.plans.map(function(p){
     return '<label class="plan"><input type="radio" name="plan" value="'+p.id+'"'+(p.selected?' checked':'')+'>'+
       '<div class="card"><div class="top"><span class="name">'+p.name+'</span><span class="radio"></span></div>'+
-      '<div class="price"><b></b><span>/ month</span></div><p class="bill"></p>'+
+      '<div class="price"><b></b><span>/ month</span></div><p class="bill"></p><p class="meta">'+p.meta+'</p>'+
       '<ul class="feat">'+p.features.map(function(f){return '<li>'+f+'</li>'}).join('')+'</ul></div></label>';
   }).join('');
   var sel=document.getElementById('sel'),start=document.getElementById('start'),talk=document.getElementById('talk'),term=document.getElementById('term');
