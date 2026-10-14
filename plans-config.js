@@ -1,6 +1,5 @@
 /* Good Mood plans: every link the plans and welcome pages use lives here.
-   Checkout links are blank for now: with none set, the plans page hides
-   the Start button and leads with "Book a call". Paste a Stripe link in to turn Start back on.
+   Stripe links below are live. To pause selling, deactivate the links in the Stripe dashboard.
 
    checkout  = Stripe Payment Link for that plan and billing cycle
                (Stripe Dashboard > Payment Links; create each as a recurring price,
@@ -15,17 +14,17 @@ window.PLANS_CONFIG = {
     { id:'managed',   name:'Managed',          monthly:5000,  quarterly:4500,
       meta:'1 editor, 1 workstream',
       features:['Social edits, talking heads and interviews','Cutdowns, versions and resizes','Promo variations and standard edits','An editor managed and trained by Michael'],
-      checkout:{ monthly:'',
-                 quarterly:'' } },
+      checkout:{ monthly:'https://buy.stripe.com/fZu4gA1bNdiC3Mt3Uvbsc00',
+                 quarterly:'https://buy.stripe.com/fZu14o5s33I25UBcr1bsc01' } },
     { id:'signature', name:'Signature',        monthly:7500,  quarterly:6750, selected:true,
       meta:'Michael, 1 workstream',
       features:['Work directly with Michael to craft your pieces','Trailers, sizzles and hero promos','Product animation and motion'],
-      checkout:{ monthly:'',
-                 quarterly:'' } },
+      checkout:{ monthly:'https://buy.stripe.com/cNicN65s3emG82J1Mnbsc02',
+                 quarterly:'https://buy.stripe.com/8x26oI4nZcey2Ip9ePbsc03' } },
     { id:'partner',   name:'Creative Partner', monthly:18500, quarterly:16650,
       meta:'2 editors, 2 workstreams, plus a full team',
       features:['Michael and a second editor, working side by side','A writer/producer for scripts and concept pitches','A colorist to grade your hero pieces','A sound designer and mixer to finish them'],
-      checkout:{ monthly:'',
-                 quarterly:'' } }
+      checkout:{ monthly:'https://buy.stripe.com/6oU28sbQr2DY6YF8aLbsc04',
+                 quarterly:'https://buy.stripe.com/6oUdRaf2D5Qafvb0Ijbsc05' } }
   ]
 };
