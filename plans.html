@@ -70,6 +70,25 @@
   .feat li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;background:currentColor}
   .cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
   .cta .sel{font-weight:600;margin-right:auto;min-width:0}
+  .rates{margin-top:18px;color:var(--text-dim);font-size:15px}
+  .rates a{color:var(--text);border-bottom:1px solid var(--accent);transition:color .2s}
+  .rates a:hover{color:var(--accent)}
+  .ask{border:0;padding:0;margin:auto;width:min(520px,calc(100% - 32px));max-height:calc(100% - 32px);background:var(--bg);color:var(--text);border-radius:16px;box-shadow:0 24px 70px rgba(0,0,0,.28)}
+  .ask::backdrop{background:rgba(20,18,40,.45)}
+  .ask form{padding:30px 28px 28px;display:flex;flex-direction:column;gap:16px}
+  .ask h2{font-size:24px;line-height:1.15;letter-spacing:-.015em;font-weight:700}
+  .ask .sub{color:var(--text-dim);font-size:15px;margin-top:-8px}
+  .ask .x{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:50%;font-size:22px;line-height:1;color:var(--text-dim)}
+  .ask .x:hover{color:var(--accent)}
+  .ask label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--text-dim);letter-spacing:.01em}
+  .ask input,.ask select,.ask textarea{font:inherit;font-size:16px;font-weight:400;color:var(--text);background:transparent;border:1.5px solid var(--line-strong);border-radius:10px;padding:11px 13px;width:100%}
+  .ask textarea{resize:vertical;min-height:84px}
+  .ask input:focus,.ask select:focus,.ask textarea:focus{outline:none;border-color:var(--accent)}
+  .ask .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .ask .hp{position:absolute;left:-9999px}
+  .ask .btn{margin-top:4px}
+  .ask .note{font-size:13px;color:var(--text-dim);text-align:center}
+  @media (max-width:480px){.ask .row{grid-template-columns:1fr}.ask form{padding:26px 20px 22px}}
   .terms{margin:34px 0 0;padding:20px 0 70px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 26px;font-size:14px;color:var(--text-dim)}
   .terms span::before{content:"+ ";color:var(--accent);font-weight:700}
   @media (max-width:480px){.bar nav{gap:14px}.bar nav a{font-size:12px}.seg span{padding:8px 13px;font-size:13px;white-space:nowrap}.seg em{margin-left:4px}.cta .btn{flex:1 1 100%}}
@@ -117,8 +136,28 @@
     <a class="btn primary" id="start" href="#">Start</a>
   </div>
 
+  <p class="rates">Project and day rates are available on request. <a id="rates-call" href="#">Schedule a call&nbsp;→</a></p>
+
   <div class="terms"><span>One request at a time per workstream, so deliveries never pile up</span><span>Unlimited revisions</span><span id="term">Month to month</span></div>
 </div>
+
+<dialog class="ask" id="ask" aria-labelledby="ask-title">
+  <form id="ask-form" novalidate>
+    <button class="x" type="button" id="ask-close" aria-label="Close">&times;</button>
+    <h2 id="ask-title">Before we talk</h2>
+    <p class="sub">A few details so the call starts in the right place. Next, you'll pick a time.</p>
+    <label>Interested in<select name="plan" id="ask-plan"></select></label>
+    <div class="row">
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+    </div>
+    <label>Company<input name="company" autocomplete="organization"></label>
+    <label>What are you working on?<textarea name="message" placeholder="Optional"></textarea></label>
+    <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn primary" type="submit" id="ask-go">Continue to calendar</button>
+    <p class="note" id="ask-note" aria-live="polite"></p>
+  </form>
+</dialog>
 
 <script src="plans-config.js"></script>
 <script>
@@ -132,7 +171,6 @@
       '<ul class="feat">'+p.features.map(function(f){return '<li>'+f+'</li>'}).join('')+'</ul></div></label>';
   }).join('');
   var sel=document.getElementById('sel'),start=document.getElementById('start'),talk=document.getElementById('talk'),term=document.getElementById('term');
-  talk.href=C.booking;talk.target='_blank';talk.rel='noopener';
   function sync(){
     var q=document.querySelector('input[name=cycle]:checked').value==='quarterly',cyc=q?'quarterly':'monthly';
     var chosen=null;
@@ -151,6 +189,42 @@
   }
   document.querySelectorAll('input[name=plan],input[name=cycle]').forEach(function(i){i.addEventListener('change',sync)});
   sync();
+
+  /* "Talk first" and "Schedule a call" open a short form; it emails Michael the
+     plan they were looking at (via FormSubmit), then sends them to the calendar. */
+  var ask=document.getElementById('ask'),askForm=document.getElementById('ask-form'),askPlan=document.getElementById('ask-plan'),askNote=document.getElementById('ask-note'),askGo=document.getElementById('ask-go');
+  var opts=[];
+  C.plans.forEach(function(p){opts.push(p.name+' (monthly)',p.name+' (quarterly)')});
+  opts.push('Project or day rate','Not sure yet');
+  askPlan.innerHTML=opts.map(function(o){return '<option>'+o+'</option>'}).join('');
+  function openAsk(choice){
+    askPlan.value=choice;askNote.textContent='';askGo.disabled=false;askGo.textContent='Continue to calendar';
+    if(ask.showModal)ask.showModal();else location.href=C.booking;
+  }
+  talk.href=C.booking;
+  talk.addEventListener('click',function(e){
+    e.preventDefault();
+    var p=C.plans.find(function(x,i){return box.querySelectorAll('.plan input')[i].checked});
+    var q=document.querySelector('input[name=cycle]:checked').value;
+    openAsk(p?p.name+' ('+q+')':'Not sure yet');
+  });
+  var rc=document.getElementById('rates-call');rc.href=C.booking;
+  rc.addEventListener('click',function(e){e.preventDefault();openAsk('Project or day rate')});
+  document.getElementById('ask-close').addEventListener('click',function(){ask.close()});
+  ask.addEventListener('click',function(e){if(e.target===ask)ask.close()});
+  askForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!askForm.reportValidity())return;
+    var f=new FormData(askForm),d={};f.forEach(function(v,k){d[k]=v});
+    if(d._honey)return;
+    d._subject='Call request: '+d.plan+(d.company?' / '+d.company:'')+' / '+d.name;
+    d._template='table';
+    askGo.disabled=true;askGo.textContent='Sending…';
+    var go=function(){location.href=C.booking};
+    fetch('https://formsubmit.co/ajax/'+C.email,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
+      .then(function(){askNote.textContent='Thanks. Taking you to the calendar…';setTimeout(go,700)})
+      .catch(go);
+  });
   var bad=[C.booking].concat(C.plans.reduce(function(a,p){return a.concat([p.checkout.monthly,p.checkout.quarterly])},[])).filter(function(u){return /REPLACE_ME/.test(u)});
   if(bad.length)console.warn('plans-config.js still has '+bad.length+' placeholder link(s).');
 })();
