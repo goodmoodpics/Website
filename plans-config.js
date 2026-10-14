@@ -9,7 +9,7 @@
 */
 window.PLANS_CONFIG = {
   email: 'michael@goodmood.pics',
-  booking: 'https://calendar.app.google/REPLACE_ME_BOOKING',
+  booking: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0If84OpyGN2ovdH8GyJfCT6OlLLmeulu4msQjYsjg7OHxc3RUdM6RMCwMzK1wO0a7jBBppeZhr',
   plans: [
     { id:'managed',   name:'Managed',          monthly:5000,  quarterly:4500,
       meta:'1 editor, 1 workstream',
