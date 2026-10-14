@@ -1,5 +1,4 @@
 /* Good Mood plans: every link the plans and welcome pages use lives here.
-   Stripe links below are live. To pause selling, deactivate the links in the Stripe dashboard.
 
    checkout  = Stripe Payment Link for that plan and billing cycle
                (Stripe Dashboard > Payment Links; create each as a recurring price,
