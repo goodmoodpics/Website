@@ -23,7 +23,7 @@ window.PLANS_CONFIG = {
                  quarterly:'https://buy.stripe.com/REPLACE_ME_SIGNATURE_QUARTERLY' } },
     { id:'partner',   name:'Creative Partner', monthly:18500, quarterly:16650,
       meta:'2 editors, 2 workstreams, plus a full team',
-      features:['Michael and a second editor, working side by side','A writer and producer for scripts and concept pitches','A colorist to grade your hero pieces','A sound designer and mixer to finish them'],
+      features:['Michael and a second editor, working side by side','A writer/producer for scripts and concept pitches','A colorist to grade your hero pieces','A sound designer and mixer to finish them'],
       checkout:{ monthly:'https://buy.stripe.com/REPLACE_ME_PARTNER_MONTHLY',
                  quarterly:'https://buy.stripe.com/REPLACE_ME_PARTNER_QUARTERLY' } }
   ]
