@@ -1,0 +1,683 @@
+{
+  "hero": {
+    "kicker": "A creative studio for film, motion & storytelling",
+    "badge": "SIZZLE — REEL PENDING",
+    "reelVideo": null,
+    "reelImage": "https://picsum.photos/seed/goodmood-hero/1800/1200"
+  },
+  "projects": [
+    {
+      "title": "SpongeBob SquarePants",
+      "client": "Nickelodeon",
+      "tags": [
+        "Entertainment"
+      ],
+      "format": "Various Property Spots",
+      "posterImage": "images/SB1.webp",
+      "cuts": [
+        {
+          "label": "NickToons Spongebob Rebrand",
+          "video": "https://vimeo.com/1019975349/cbf94d6831"
+        },
+        {
+          "label": "Kamp Koral on Paramount+",
+          "video": "https://vimeo.com/1019974318/a9068f10eb"
+        },
+        {
+          "label": "The Tidal Zone",
+          "video": "https://vimeo.com/807313061/519f7b863c",
+          "posterImage": null,
+          "subtitle": "Featuring Neil deGrasse Tyson — vertical social spot (9×16)",
+          "vertical": true
+        }
+      ]
+    },
+    {
+      "title": "Behind the Counter",
+      "client": "Shopify",
+      "tags": [
+        "Brands",
+        "Documentary"
+      ],
+      "format": "Short Documentary Series",
+      "posterImage": "images/BTC.webp",
+      "cuts": [
+        {
+          "label": "Revenge Of",
+          "video": "https://www.youtube.com/watch?v=HCmWAuKIOpM",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Olive Ateliers",
+          "video": "https://www.youtube.com/watch?v=DboqF89dHaU",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Plant Material",
+          "video": "https://www.youtube.com/watch?v=SJb1EyDd9Lg",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Peak Design",
+          "video": "https://www.youtube.com/watch?v=WsO3A2GL7RY",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Giant Robot",
+          "video": "https://www.youtube.com/watch?v=pMgYMT26daA",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "BBC Home Entertainment",
+      "client": "BBC Worldwide",
+      "tags": [
+        "Entertainment"
+      ],
+      "format": "Trailers",
+      "posterImage": "images/PEDW.webp",
+      "cuts": [
+        {
+          "label": "Planet Earth",
+          "video": "https://player.vimeo.com/video/1025283918"
+        },
+        {
+          "label": "Doctor Who",
+          "video": "https://player.vimeo.com/video/1025284896"
+        },
+        {
+          "label": "Life Stories",
+          "video": "https://vimeo.com/152641315/96309e99db",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Hidden Kingdoms",
+          "video": "https://vimeo.com/152641312/1b877d51d8",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Merlin",
+          "video": "https://vimeo.com/152641313/a0ffbf7dd3",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Sherlock S1–3",
+          "video": "https://vimeo.com/152641314/3268adb3fe",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "The Honourable Woman",
+          "video": "https://vimeo.com/152641316/0d8492f8f8",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "Henry Danger: The Movie",
+      "client": "Nickelodeon / Paramount+",
+      "tags": [
+        "Entertainment"
+      ],
+      "format": "Promo Campaign",
+      "posterImage": "images/HDTM.webp",
+      "cuts": [
+        {
+          "label": "Encore Spot",
+          "video": "https://vimeo.com/1053175079/0acaf1c104",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Franchise Spot",
+          "video": "https://vimeo.com/1053175456/942203c31f",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "Skyword",
+      "client": "Skyword",
+      "tags": [
+        "Motion"
+      ],
+      "format": "Corporate",
+      "posterImage": "images/SKY.webp",
+      "cuts": [
+        {
+          "label": "Homepage Sizzle",
+          "video": "https://vimeo.com/1228165639/ee8559754d",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Content Atomization",
+          "video": "https://vimeo.com/831917754"
+        }
+      ]
+    },
+    {
+      "title": "The War Show",
+      "client": "Bond/360 Films",
+      "tags": [
+        "Documentary"
+      ],
+      "format": "Documentary",
+      "posterImage": "images/WS.webp",
+      "cuts": [
+        {
+          "label": "Trailer",
+          "video": "https://vimeo.com/211380477/1011ad4e51"
+        }
+      ]
+    },
+    {
+      "title": "Tales of the Teenage Mutant Ninja Turtles",
+      "client": "Paramount+",
+      "tags": [
+        "Entertainment"
+      ],
+      "format": "Campaign Launch",
+      "posterImage": "images/TMNT1.webp",
+      "cuts": [
+        {
+          "label": "Brand New Series",
+          "video": "https://vimeo.com/995592112/ef92864898",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Turtle Power",
+          "video": "https://vimeo.com/1019946824/5dd90b99b5",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Accolades Spot",
+          "video": "https://vimeo.com/1019946910/159de0ccfd",
+          "posterImage": "images/TMNT2.webp",
+          "subtitle": null
+        },
+        {
+          "label": "TMNT Battle Tycoon",
+          "video": "https://vimeo.com/1019946873/1f1a256505",
+          "posterImage": "images/TMNT3.webp",
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "#WomenNotObjects",
+      "client": "Badger & Winters",
+      "tags": [
+        "Brands",
+        "Documentary"
+      ],
+      "format": "Campaign",
+      "posterImage": "images/WNO.webp",
+      "summary": "A viral call to end the objectification of women in advertising. The campaign reached 40M+ people in under three weeks and led Cannes Lions to instruct its juries not to award work that objectifies women.",
+      "accolades": [
+        "Cannes Lions 2016 — Shortlist, Glass: The Lion for Change",
+        "PR News Agency Elite Awards 2016 — Advocacy; Word of Mouth/Viral"
+      ],
+      "badge": "Cannes Lions",
+      "cuts": [
+        {
+          "label": "#IStandUp",
+          "video": "https://www.youtube.com/watch?v=1O4ycTml7fk",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "Aura Finance",
+      "client": "Aura Finance",
+      "tags": [
+        "Brands",
+        "Motion"
+      ],
+      "format": "Animated Explainer",
+      "posterImage": "images/AURA.webp",
+      "cuts": [
+        {
+          "label": "Platform Animation",
+          "video": "https://vimeo.com/1222162061/6fbacff62b",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "God Knows Where I Am",
+      "client": "Wider Film Projects",
+      "tags": [
+        "Documentary"
+      ],
+      "format": "Documentary",
+      "posterImage": "images/GKWIA.webp",
+      "cuts": [
+        {
+          "label": "Trailer",
+          "video": "https://vimeo.com/1025195109"
+        }
+      ]
+    },
+    {
+      "title": "Avon — Beauty for a Purpose",
+      "client": "Avon",
+      "tags": [
+        "Brands"
+      ],
+      "format": "Commercial",
+      "posterImage": "images/AVON.webp",
+      "cuts": [
+        {
+          "label": "Indulgence",
+          "video": "https://vimeo.com/1233418242/118db97017",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Ultra Color Revolution",
+          "video": "https://vimeo.com/1233417931/eb6a598059",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "Star Trek: Prodigy",
+      "client": "Paramount+ / Nickelodeon",
+      "tags": [
+        "Entertainment"
+      ],
+      "format": "Accolades Spot",
+      "posterImage": "images/PRODIGY.webp",
+      "cuts": [
+        {
+          "label": "Accolades Spot",
+          "video": "https://vimeo.com/665746411/152f1d2c41",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "We Come as Friends",
+      "client": "BBC Worldwide",
+      "tags": [
+        "Documentary"
+      ],
+      "format": "Documentary",
+      "posterImage": "images/WCAF.webp",
+      "cuts": [
+        {
+          "label": "Trailer",
+          "video": "https://www.youtube.com/watch?v=Eo5v6_OlUWo"
+        }
+      ]
+    },
+    {
+      "title": "Monster High 2",
+      "client": "Paramount+",
+      "tags": [
+        "Entertainment"
+      ],
+      "format": "Movie Television Event",
+      "posterImage": "images/MH2.webp",
+      "cuts": [
+        {
+          "label": "Monster High 2",
+          "video": "https://vimeo.com/1019971472/5d2d3f4db3"
+        },
+        {
+          "label": "Three Chances",
+          "video": "https://vimeo.com/1019972599/db030b0a7a"
+        }
+      ]
+    },
+    {
+      "title": "One Woman",
+      "client": "Thinx + Harper's Bazaar",
+      "tags": [
+        "Brands",
+        "Documentary"
+      ],
+      "format": "Short Documentary Series",
+      "posterImage": "images/OW.webp",
+      "cuts": [
+        {
+          "label": "Oona Tempest",
+          "video": "https://vimeo.com/266224967/7ae28508cf"
+        },
+        {
+          "label": "Kiko Matthews",
+          "video": "https://www.youtube.com/watch?v=352g8hFv02o"
+        },
+        {
+          "label": "Tia Norfleet",
+          "video": "https://www.youtube.com/watch?v=9lmlr6sGij0"
+        }
+      ]
+    },
+    {
+      "title": "RI Realtors",
+      "client": "Third Spoon",
+      "tags": [
+        "Brands"
+      ],
+      "format": "Commercial",
+      "posterImage": "images/RI.webp",
+      "cuts": [
+        {
+          "video": "https://player.vimeo.com/video/1051542834"
+        }
+      ]
+    },
+    {
+      "title": "Cisco",
+      "client": "Cisco",
+      "tags": [
+        "Brands"
+      ],
+      "format": "Corporate",
+      "posterImage": "images/CHILL.webp",
+      "cuts": [
+        {
+          "label": "Chill Outcomes",
+          "video": "https://vimeo.com/214763729/9900af4ca0",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "Let Fury Have the Hour",
+      "client": "Gigantic Pictures",
+      "tags": [
+        "Documentary"
+      ],
+      "format": "Documentary",
+      "posterImage": "images/FURY.webp",
+      "cuts": [
+        {
+          "label": "Trailer",
+          "video": "https://vimeo.com/152641903/8c5515cf35",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "Teenage Mutant Ninja Turtles: Super Shredder",
+      "client": "Nickelodeon",
+      "tags": [
+        "Entertainment"
+      ],
+      "format": "Trailer",
+      "posterImage": "images/SS.webp",
+      "cuts": [
+        {
+          "label": "Official Trailer",
+          "video": "https://www.youtube.com/watch?v=-2xCZEor9hU",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ],
+      "accolades": [
+        "Promax Award winner"
+      ],
+      "badge": "Promax winner"
+    },
+    {
+      "title": "Hello Earthlings",
+      "client": "Wyoming Stargazing",
+      "tags": [
+        "Entertainment",
+        "AI Video",
+        "Motion"
+      ],
+      "format": "Concept Trailer",
+      "posterImage": "images/HE.webp",
+      "cuts": [
+        {
+          "video": "https://vimeo.com/1123958624/dd54006d6d"
+        }
+      ]
+    },
+    {
+      "title": "Service King",
+      "client": "Storyful",
+      "tags": [
+        "Brands"
+      ],
+      "format": "Commercial",
+      "posterImage": "images/SK.webp",
+      "cuts": [
+        {
+          "video": "https://player.vimeo.com/video/1025281661"
+        }
+      ]
+    },
+    {
+      "title": "Boo Riley — \"Mango Garry\"",
+      "client": "Boo Riley",
+      "tags": [
+        "Entertainment"
+      ],
+      "format": "Music Video",
+      "posterImage": "images/MANGO.webp",
+      "cuts": [
+        {
+          "label": "Official Music Video",
+          "video": "https://vimeo.com/728445482/ace18d3bc7",
+          "posterImage": null,
+          "subtitle": "Concept & direction by Michael Patten"
+        }
+      ]
+    },
+    {
+      "title": "This Is Not a Film",
+      "client": "Palisades Tartan",
+      "tags": [
+        "Documentary"
+      ],
+      "format": "Documentary",
+      "posterImage": "images/TINAF.webp",
+      "cuts": [
+        {
+          "label": "US Trailer",
+          "video": "https://www.youtube.com/watch?v=ajOgE_BPLVU",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "Payfactors",
+      "client": "Payfactors",
+      "tags": [
+        "Motion"
+      ],
+      "format": "Corporate",
+      "posterImage": "images/PF.webp",
+      "cuts": [
+        {
+          "label": "Overview Sizzle",
+          "video": "https://vimeo.com/397292954"
+        },
+        {
+          "label": "Product Launch",
+          "video": "https://vimeo.com/807317791"
+        }
+      ]
+    },
+    {
+      "title": "Ries Travel Bottles",
+      "client": "Ries",
+      "tags": [
+        "Brands"
+      ],
+      "format": "Commercial",
+      "posterImage": "images/RIES.webp",
+      "cuts": [
+        {
+          "video": "https://player.vimeo.com/video/846090089"
+        }
+      ]
+    },
+    {
+      "title": "MLB Players Trust",
+      "client": "MLB Players Trust",
+      "tags": [
+        "Brands",
+        "Motion"
+      ],
+      "format": "Motion",
+      "posterImage": "images/MLBDR.webp",
+      "cuts": [
+        {
+          "label": "Disaster Relief",
+          "video": "https://vimeo.com/244068086/0169a13485",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "Private Peaceful",
+      "client": "BBC Worldwide",
+      "tags": [
+        "Entertainment"
+      ],
+      "format": "Film",
+      "posterImage": "images/PP.webp",
+      "cuts": [
+        {
+          "label": "Trailer",
+          "video": "https://vimeo.com/1025283545"
+        }
+      ]
+    },
+    {
+      "title": "Nickelodeon Tune-In",
+      "client": "Nickelodeon",
+      "tags": [
+        "Entertainment"
+      ],
+      "format": "Promo",
+      "posterImage": "images/NICK8.webp",
+      "cuts": [
+        {
+          "label": "Tonight 8",
+          "video": "https://vimeo.com/404754878/59f21a9958",
+          "posterImage": null,
+          "subtitle": "Nicky, Ricky, Dicky & Dawn and Star Falls — featuring NBA star Isaiah Thomas"
+        }
+      ]
+    },
+    {
+      "title": "Moose Knuckles",
+      "client": "Moose Knuckles",
+      "tags": [
+        "Brands",
+        "Motion"
+      ],
+      "format": "Motion",
+      "posterImage": "images/MK.webp",
+      "cuts": [
+        {
+          "video": "https://player.vimeo.com/video/329420369"
+        }
+      ]
+    },
+    {
+      "title": "What Do Gods Remember",
+      "client": "XPRIZE Futurevision",
+      "tags": [
+        "Motion",
+        "AI Video"
+      ],
+      "format": "Concept Trailer",
+      "posterImage": "images/WDGR.webp",
+      "cuts": [
+        {
+          "label": "Trailer",
+          "video": "https://vimeo.com/1216930443/7a4b6646a5",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "Planet Medicine Law Group",
+      "client": "PMLG",
+      "tags": [
+        "Motion"
+      ],
+      "format": "Corporate",
+      "posterImage": "images/PMLG.webp",
+      "cuts": [
+        {
+          "label": "Launch Ad",
+          "video": "https://vimeo.com/473120756"
+        }
+      ]
+    },
+    {
+      "title": "A New Republic of the Heart",
+      "client": "Book Trailer",
+      "tags": [
+        "Documentary"
+      ],
+      "posterImage": "images/NRH.webp",
+      "cuts": [
+        {
+          "label": "Book Trailer",
+          "video": "https://vimeo.com/266770623/8abcf99bee"
+        }
+      ]
+    },
+    {
+      "title": "When Kids Call the Shots",
+      "client": "Book Trailer",
+      "tags": [
+        "Documentary"
+      ],
+      "posterImage": "images/WKCS.webp",
+      "cuts": [
+        {
+          "label": "Book Trailer",
+          "video": "https://vimeo.com/181337979/be6fbc13ae"
+        }
+      ]
+    },
+    {
+      "title": "P&G Signal Accelerator",
+      "client": "P&G",
+      "tags": [
+        "Brands",
+        "Motion"
+      ],
+      "format": "Motion",
+      "posterImage": "images/PG.webp",
+      "cuts": [
+        {
+          "video": "https://vimeo.com/223056274/104f786839"
+        }
+      ]
+    }
+  ]
+}
