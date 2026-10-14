@@ -68,6 +68,9 @@
   .feat{list-style:none;border-top:1px solid currentColor;border-top-color:color-mix(in srgb,currentColor 25%,transparent);padding-top:20px;display:flex;flex-direction:column;gap:12px;font-size:15.5px}
   .feat li{padding-left:18px;position:relative}
   .feat li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;background:currentColor}
+  .rates{margin-top:18px;color:var(--text-dim);font-size:15px}
+  .rates a{color:var(--text);border-bottom:1px solid var(--accent);transition:color .2s}
+  .rates a:hover{color:var(--accent)}
   .cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
   .cta .sel{font-weight:600;margin-right:auto;min-width:0}
   .terms{margin:34px 0 0;padding:20px 0 70px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 26px;font-size:14px;color:var(--text-dim)}
@@ -117,6 +120,8 @@
     <a class="btn primary" id="start" href="#">Start</a>
   </div>
 
+  <p class="rates">Project and day rates are available on request. <a id="rates-call" href="#" target="_blank" rel="noopener">Schedule a call&nbsp;→</a></p>
+
   <div class="terms"><span>One request at a time per workstream, so deliveries never pile up</span><span>Unlimited revisions</span><span id="term">Month to month</span><span>Pay by bank transfer or card</span></div>
 </div>
 
@@ -133,6 +138,7 @@
   }).join('');
   var sel=document.getElementById('sel'),start=document.getElementById('start'),talk=document.getElementById('talk'),term=document.getElementById('term');
   talk.href=C.booking;talk.target='_blank';talk.rel='noopener';
+  document.getElementById('rates-call').href=C.booking;
   function sync(){
     var q=document.querySelector('input[name=cycle]:checked').value==='quarterly',cyc=q?'quarterly':'monthly';
     var chosen=null;
