@@ -8,13 +8,7 @@
    booking   = your scheduling page (Google Calendar appointment schedule or Cal.com)
 
    Payments are off for now (checkout left blank, so the page leads with "Book a call").
-   Live Stripe Payment Links, ready to paste back in:
-     managed    monthly https://buy.stripe.com/fZu4gA1bNdiC3Mt3Uvbsc00
-                quarterly https://buy.stripe.com/fZu14o5s33I25UBcr1bsc01
-     signature  monthly https://buy.stripe.com/cNicN65s3emG82J1Mnbsc02
-                quarterly https://buy.stripe.com/8x26oI4nZcey2Ip9ePbsc03
-     partner    monthly https://buy.stripe.com/6oU28sbQr2DY6YF8aLbsc04
-                quarterly https://buy.stripe.com/6oUdRaf2D5Qafvb0Ijbsc05
+   The links are saved locally in GoodMood upload/stripe-payment-links.txt.
 */
 window.PLANS_CONFIG = {
   email: 'michael@goodmood.pics',
