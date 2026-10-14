@@ -29,6 +29,7 @@
   .bar nav{display:flex;gap:30px}
   .bar nav a{font-size:13px;letter-spacing:.02em;color:var(--text-dim);transition:color .2s}
   .bar nav a:hover{color:var(--text)}
+  .bar nav a.here{color:var(--text);box-shadow:inset 0 -1px 0 var(--accent);padding-bottom:4px}
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .15s,background .2s,color .2s,border-color .2s}
   .btn.primary{background:var(--accent);color:var(--bg)}
   .btn.primary:hover{transform:translateY(-1px)}
@@ -113,7 +114,7 @@
 <div class="wrap">
   <div class="bar">
     <a href="index.html" aria-label="Good Mood home"><svg viewBox="0 0 232 109" aria-hidden="true"><use href="#gm-logo-glyph"/></svg></a>
-    <nav><a href="index.html#work">WORK</a><a href="index.html#about">ABOUT</a><a href="index.html#contact">CONTACT</a></nav>
+    <nav><a href="index.html#work">WORK</a><a href="index.html#about">ABOUT</a><a href="plans.html" class="here" aria-current="page">PLANS</a><a href="index.html#contact">CONTACT</a></nav>
   </div>
 
   <header class="intro">
