@@ -6,6 +6,15 @@
                turn on "Bank debit (ACH)" under payment methods, and set the
                "After payment" redirect to https://YOUR-SITE/welcome.html)
    booking   = your scheduling page (Google Calendar appointment schedule or Cal.com)
+
+   Payments are off for now (checkout left blank, so the page leads with "Book a call").
+   Live Stripe Payment Links, ready to paste back in:
+     managed    monthly https://buy.stripe.com/fZu4gA1bNdiC3Mt3Uvbsc00
+                quarterly https://buy.stripe.com/fZu14o5s33I25UBcr1bsc01
+     signature  monthly https://buy.stripe.com/cNicN65s3emG82J1Mnbsc02
+                quarterly https://buy.stripe.com/8x26oI4nZcey2Ip9ePbsc03
+     partner    monthly https://buy.stripe.com/6oU28sbQr2DY6YF8aLbsc04
+                quarterly https://buy.stripe.com/6oUdRaf2D5Qafvb0Ijbsc05
 */
 window.PLANS_CONFIG = {
   email: 'michael@goodmood.pics',
@@ -14,17 +23,17 @@ window.PLANS_CONFIG = {
     { id:'managed',   name:'Managed',          monthly:5000,  quarterly:4500,
       meta:'1 editor, 1 workstream',
       features:['Social edits, talking heads and interviews','Cutdowns, versions and resizes','Promo variations and standard edits','An editor managed and trained by Michael'],
-      checkout:{ monthly:'https://buy.stripe.com/fZu4gA1bNdiC3Mt3Uvbsc00',
-                 quarterly:'https://buy.stripe.com/fZu14o5s33I25UBcr1bsc01' } },
+      checkout:{ monthly:'',
+                 quarterly:'' } },
     { id:'signature', name:'Signature',        monthly:7500,  quarterly:6750, selected:true,
       meta:'Michael, 1 workstream',
       features:['Work directly with Michael to craft your pieces','Trailers, sizzles and hero promos','Product animation and motion'],
-      checkout:{ monthly:'https://buy.stripe.com/cNicN65s3emG82J1Mnbsc02',
-                 quarterly:'https://buy.stripe.com/8x26oI4nZcey2Ip9ePbsc03' } },
+      checkout:{ monthly:'',
+                 quarterly:'' } },
     { id:'partner',   name:'Creative Partner', monthly:18500, quarterly:16650,
       meta:'2 editors, 2 workstreams, plus a full team',
       features:['Michael and a second editor, working side by side','A writer/producer for scripts and concept pitches','A colorist to grade your hero pieces','A sound designer and mixer to finish them'],
-      checkout:{ monthly:'https://buy.stripe.com/6oU28sbQr2DY6YF8aLbsc04',
-                 quarterly:'https://buy.stripe.com/6oUdRaf2D5Qafvb0Ijbsc05' } }
+      checkout:{ monthly:'',
+                 quarterly:'' } }
   ]
 };
