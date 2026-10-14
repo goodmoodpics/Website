@@ -146,13 +146,13 @@
     if(chosen){
       sel.textContent=chosen.name+', '+fmt(q?chosen.quarterly:chosen.monthly)+' / month';
       start.textContent='Start '+chosen.name;
-      start.href=chosen.checkout[cyc];
+      var url=chosen.checkout[cyc];
+      if(url&&!/REPLACE_ME/.test(url)){start.href=url;start.style.display='';talk.className='btn ghost';talk.textContent='Talk first';}
+      else{start.style.display='none';talk.className='btn primary';talk.textContent='Book a call';}
     }
   }
   document.querySelectorAll('input[name=plan],input[name=cycle]').forEach(function(i){i.addEventListener('change',sync)});
   sync();
-  var bad=[C.booking].concat(C.plans.reduce(function(a,p){return a.concat([p.checkout.monthly,p.checkout.quarterly])},[])).filter(function(u){return /REPLACE_ME/.test(u)});
-  if(bad.length)console.warn('plans-config.js still has '+bad.length+' placeholder link(s).');
 })();
 </script>
 </body>
