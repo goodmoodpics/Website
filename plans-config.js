@@ -20,7 +20,7 @@ window.PLANS_CONFIG = {
                  quarterly:'' } },
     { id:'signature', name:'Signature',        monthly:7500,  quarterly:6750, selected:true,
       meta:'Michael, 1 workstream',
-      features:['Everything in Managed, still one workstream','Work directly with Michael to craft your pieces','Trailers, sizzles, launch and campaign spots','Product animation and motion'],
+      features:['Work directly with Michael to craft your pieces','All the same kinds of edits as Managed','Plus trailers, sizzles, launch and campaign spots','Product animation and motion'],
       checkout:{ monthly:'',
                  quarterly:'' } },
     { id:'partner',   name:'Creative Partner', monthly:18500, quarterly:16650,
