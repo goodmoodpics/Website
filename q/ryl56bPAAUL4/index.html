@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
+<title>Invoice 10 from Good Mood Pics</title><meta property="og:title" content="Invoice 10 from Good Mood Pics"><meta property="og:site_name" content="Good Mood Pics">
+<link rel="icon" href="/favicon.svg">
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f3ead7;color:#1a17a0;
+font:500 15px/1.5 -apple-system,"Helvetica Neue",Arial,sans-serif;text-align:center;padding:24px}</style></head>
+<body><p id="m">Opening your document…</p>
+<script>
+(async()=>{
+  try {
+    // the encrypted document lives in d.txt; fetch it fresh every time so edits and "Paid" show up right away
+    const r=await fetch('d.txt?t='+Date.now(),{cache:'no-store'});
+    if(!r.ok) throw new Error('missing');
+    const D=(await r.text()).trim();
+    const k=location.hash.slice(1).replace(/-/g,'+').replace(/_/g,'/');
+    const kb=Uint8Array.from(atob(k+'='.repeat((4-k.length%4)%4)),c=>c.charCodeAt(0));
+    const key=await crypto.subtle.importKey('raw',kb,'AES-GCM',false,['decrypt']);
+    const b=Uint8Array.from(atob(D),c=>c.charCodeAt(0));
+    const pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:b.slice(0,12)},key,b.slice(12));
+    const doc=new DOMParser().parseFromString(new TextDecoder().decode(pt),'text/html');
+    document.replaceChild(document.adoptNode(doc.documentElement),document.documentElement);
+  } catch(e) {
+    document.getElementById('m').innerHTML='This link looks incomplete. Please open the full link from your email,<br>or reply to ask for a new one.';
+  }
+})();
+</script></body></html>
