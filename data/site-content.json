@@ -75,41 +75,6 @@
       ]
     },
     {
-      "title": "Learn With Shopify",
-      "client": "Shopify",
-      "tags": [
-        "Brands"
-      ],
-      "format": "Explainer Series",
-      "posterImage": "images/LWS.webp",
-      "cuts": [
-        {
-          "label": "Shopify Tutorial for Beginners",
-          "video": "https://www.youtube.com/watch?v=RWI59fC7Z48",
-          "posterImage": null,
-          "subtitle": null
-        },
-        {
-          "label": "Starting a Beverage Business",
-          "video": "https://www.youtube.com/watch?v=lnJf-rF067g",
-          "posterImage": null,
-          "subtitle": null
-        },
-        {
-          "label": "Sourcing Wholesale Suppliers",
-          "video": "https://www.youtube.com/watch?v=4o2ugW29b3c",
-          "posterImage": null,
-          "subtitle": null
-        },
-        {
-          "label": "Making Money with Shopify",
-          "video": "https://www.youtube.com/watch?v=pLWlfuo39N0",
-          "posterImage": null,
-          "subtitle": null
-        }
-      ]
-    },
-    {
       "title": "BBC Home Entertainment",
       "client": "BBC Worldwide",
       "tags": [
@@ -289,6 +254,41 @@
         {
           "label": "Platform Animation",
           "video": "https://vimeo.com/1222162061/6fbacff62b",
+          "posterImage": null,
+          "subtitle": null
+        }
+      ]
+    },
+    {
+      "title": "Learn With Shopify",
+      "client": "Shopify",
+      "tags": [
+        "Brands"
+      ],
+      "format": "Explainer Series",
+      "posterImage": "images/LWS.webp",
+      "cuts": [
+        {
+          "label": "Shopify Tutorial for Beginners",
+          "video": "https://www.youtube.com/watch?v=RWI59fC7Z48",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Starting a Beverage Business",
+          "video": "https://www.youtube.com/watch?v=lnJf-rF067g",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Sourcing Wholesale Suppliers",
+          "video": "https://www.youtube.com/watch?v=4o2ugW29b3c",
+          "posterImage": null,
+          "subtitle": null
+        },
+        {
+          "label": "Making Money with Shopify",
+          "video": "https://www.youtube.com/watch?v=pLWlfuo39N0",
           "posterImage": null,
           "subtitle": null
         }
